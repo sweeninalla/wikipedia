@@ -1,0 +1,3 @@
+default: -t @android RESET_BETWEEN_SCENARIOS=1 -f html -o execution_result.html SCREEN_SHOT=false TAB=false --format progress
+phone: -t @android -t ~@tab -f html -o phone_execution_result.html SCREEN_SHOT=false TAB=false
+tablet: -t ~@wip -f html -o tablet_execution_result.html SCREEN_SHOT=false TAB=true
